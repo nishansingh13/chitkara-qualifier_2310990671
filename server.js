@@ -8,11 +8,21 @@ const app = express();
 app.use(express.json());
 app.use("/health", healthRouter);
 app.use("/bfhl", operationsRouter);
+
 app.use((req, res) => {
   res.status(404).json({
     is_success: false,
     official_email: EMAIL,
-    error: "Endpoint not found"
+    error: `Route ${req.method} ${req.path} not found`
+  });
+});
+
+app.use((err, req, res, next) => {
+  console.error("Unhandled error:", err);
+  res.status(500).json({
+    is_success: false,
+    official_email: EMAIL,
+    error: "Internal server error"
   });
 });
 
