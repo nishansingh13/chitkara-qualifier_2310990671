@@ -31,7 +31,7 @@ PORT=3000 node server.js
 The app reads environment variables from a `.env` file (via `dotenv`) if present.
 
 **Prerequisites**
-- Node.js (v16+ recommended) with ES module support. Ensure `package.json` contains `"type": "module"` for `import` syntax.
+- Ensure `package.json` contains `"type": "module"` for `import` syntax.
 
 **Environment**
 - `PORT` — optional server port (defaults to `3000`)
@@ -75,4 +75,3 @@ curl -i http://localhost:3000/health
 **Contact**
 - Official contact email: nishan0671.be23@chitkara.edu.in
 
----
