@@ -76,4 +76,3 @@ curl -i http://localhost:3000/health
 - Official contact email: nishan0671.be23@chitkara.edu.in
 
 ---
-Created by an automated assistant — update details if your controllers or routes change.
