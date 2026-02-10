@@ -1,0 +1,21 @@
+{
+  "name": "chitkara-qualifier",
+  "version": "1.0.0",
+  "description": "Bajaj Qualifier Test By Nishan Singh (2310990671)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@azure-rest/ai-inference": "^1.0.0-beta.6",
+    "@azure/core-auth": "^1.10.1",
+    "axios": "^1.13.5",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1"
+  }
+}
